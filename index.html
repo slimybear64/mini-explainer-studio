@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Explainer Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            padding: 40px;
+            max-width: 700px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #005fa3;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.85em;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎬 Mini Explainer Studio</h1>
+    <p>Request a short animation or article to help explain your topic!</p>
+
+    <!-- ✅ FormSubmit integration -->
+    <form action="https://formsubmit.co/talk2jayajmera@gmail.com" method="POST">
+        <!-- Optional settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Explainer Request from Mini Studio">
+        <input type="hidden" name="_template" value="table">
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic You Need Explained:</label>
+        <input type="text" id="topic" name="topic" required>
+
+        <label for="format">Preferred Format:</label>
+        <select id="format" name="format">
+            <option value="Animation">Animation</option>
+            <option value="Article">Article</option>
+            <option value="Both">Both</option>
+        </select>
+
+        <label for="notes">Extra Notes (optional):</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any context or specific requests..."></textarea>
+
+        <input type="submit" value="Submit Request">
+    </form>
+
+    <div class="footer">
+        You’ll receive your explainer by email, school chat, or portfolio page—stay tuned! 🚀
+    </div>
+
+</body>
+</html>
